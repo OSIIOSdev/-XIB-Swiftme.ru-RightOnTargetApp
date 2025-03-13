@@ -15,14 +15,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" minimumValueImage="01.square.fill" catalog="system" maximumValueImage="01.square.fill" translatesAutoresizingMaskIntoConstraints="NO" id="hAs-ob-XwO">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" minimumValueImage="01.square.fill" catalog="system" maximumValueImage="50.square.fill" translatesAutoresizingMaskIntoConstraints="NO" id="hAs-ob-XwO">
                                 <rect key="frame" x="149" y="161.66666666666666" width="554" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="550" id="FZT-qd-cwB"/>
                                 </constraints>
-                                <connections>
-                                    <action selector="sliderValueChanged" destination="BYZ-38-t0r" eventType="valueChanged" id="Ynt-Ld-Q5e"/>
-                                </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0g-65-ZTp">
                                 <rect key="frame" x="338.66666666666669" y="271.66666666666669" width="175.00000000000006" height="50"/>
@@ -33,7 +30,7 @@
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="checkValueButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="0ad-oQ-e6v"/>
+                                    <action selector="getResultButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="0ad-oQ-e6v"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QrW-JG-nFf">
@@ -66,5 +63,6 @@
     </scenes>
     <resources>
         <image name="01.square.fill" catalog="system" width="128" height="114"/>
+        <image name="50.square.fill" catalog="system" width="128" height="114"/>
     </resources>
 </document>
